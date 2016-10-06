@@ -23,7 +23,7 @@ function getDisplay {
 
 statement "Pick desired screen format:"
 
-select SCRIPT in ${0%/*}/screen_*;
+select SCRIPT in ${0%/*}/*.sh;
 do
 	echo $SCRIPT
 	if [[ $REPLY = "q" ]]; then
